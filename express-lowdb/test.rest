@@ -1,0 +1,38 @@
+@url = http://localhost:3000
+
+### Get All Movies
+{{url}}/
+
+### Get Random Movie
+{{url}}/random
+
+### Find Movie
+{{url}}/matrix
+
+### Add Movie
+POST {{url}}/add
+Content-Type: application/json
+
+{
+  "movie": {
+    "name": "New Movie",
+    "year": "2023",
+    "costs": "10 million USD"
+  }
+}
+
+### Update Movie
+PATCH {{url}}/update/New Movie
+Content-Type: application/json
+
+{
+   "movie": {
+        "name": "The Dark Knight Rises",
+        "year": "2012",
+        "costs": "250 million USD"
+    }
+}
+
+
+### Delete Movie
+DELETE {{url}}/delete/The Dark Knight Rises

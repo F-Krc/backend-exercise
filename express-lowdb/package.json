@@ -1,0 +1,26 @@
+{
+  "name": "be-express-lowdb-f-krc",
+  "version": "1.0.0",
+  "description": "Wir erstellen eine einfache Express-App, die LowDB verwendet, um Daten zu speichern und abzurufen. Die App wird eine einfache \"Filmliste\" sein.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --ignore '*.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/be-express-lowdb-F-Krc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/be-express-lowdb-F-Krc/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/be-express-lowdb-F-Krc#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "lowdb": "^6.0.1"
+  }
+}
