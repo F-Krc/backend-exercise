@@ -1,0 +1,144 @@
+[
+  {
+    "id": 1,
+    "name": "Schokoladenkekse",
+    "zutaten": [
+      "200g Mehl",
+      "100g Zucker",
+      "100g Butter",
+      "1 Ei",
+      "100g Schokoladenstückchen"
+    ],
+    "anleitung": "1. Mehl, Zucker und Butter in eine Schüssel geben und zu einem Teig verkneten. \n2. Das Ei hinzufügen und gut vermischen. \n3. Schokoladenstückchen zum Teig geben und gleichmäßig verteilen. \n4. Den Teig zu kleinen Kugeln formen und auf ein Backblech legen. \n5. Im vorgeheizten Ofen bei 180 Grad Celsius etwa 12-15 Minuten backen. \n6. Die Kekse aus dem Ofen nehmen und abkühlen lassen. Genießen!"
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti Bolognese",
+    "zutaten": [
+      "250g Spaghetti",
+      "300g Hackfleisch",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "400g passierte Tomaten",
+      "1 TL Olivenöl",
+      "Salz und Pfeffer nach Geschmack"
+    ],
+    "anleitung": "1. Spaghetti in einem Topf mit kochendem Salzwasser al dente kochen. \n2. Zwiebel und Knoblauch fein hacken. \n3. Olivenöl in einer Pfanne erhitzen und Hackfleisch darin anbraten. \n4. Zwiebel und Knoblauch hinzufügen und mitbraten, bis sie goldbraun sind. \n5. Passierte Tomaten hinzufügen und zum Kochen bringen. \n6. Mit Salz und Pfeffer würzen und bei niedriger Hitze 20 Minuten köcheln lassen. \n7. Spaghetti abgießen und mit der Bolognesesoße servieren. Guten Appetit!"
+  },
+  {
+    "id": 3,
+    "name": "Caesar Salad",
+    "zutaten": [
+      "1 Kopf Romana-Salat",
+      "100g Croutons",
+      "50g geriebener Parmesan",
+      "4 EL Caesar-Dressing"
+    ],
+    "anleitung": "1. Salat waschen und in mundgerechte Stücke zerteilen. \n2. Croutons in einer Pfanne goldbraun rösten. \n3. Salat, Croutons und geriebenen Parmesan in eine große Schüssel geben. \n4. Mit Caesar-Dressing übergießen und gut vermengen. \n5. Sofort servieren und genießen!"
+  },
+  {
+    "id": 4,
+    "name": "Pizza Margherita",
+    "zutaten": [
+      "250g Pizzateig",
+      "150g passierte Tomaten",
+      "100g Mozzarella",
+      "Frisches Basilikum",
+      "Olivenöl",
+      "Salz und Pfeffer nach Geschmack"
+    ],
+    "anleitung": "1. Den Pizzateig ausrollen und auf ein Backblech legen. \n2. Passierte Tomaten auf dem Teig verteilen und gleichmäßig verstreichen. \n3. Mozzarella in Scheiben schneiden und auf der Tomatensauce verteilen. \n4. Basilikumblätter auf der Pizza verteilen. \n5. Mit Salz und Pfeffer würzen und mit etwas Olivenöl beträufeln. \n6. Im vorgeheizten Ofen bei 200 Grad Celsius etwa 12-15 Minuten backen. \n7. Aus dem Ofen nehmen, kurz abkühlen lassen und servieren."
+  },
+  {
+    "id": 5,
+    "name": "Chicken Stir-Fry",
+    "zutaten": [
+      "400g Hähnchenbrustfilet",
+      "1 Paprika",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "100g Brokkoli",
+      "2 EL Sojasauce",
+      "1 EL Honig",
+      "1 TL Ingwer",
+      "1 TL Sesamöl",
+      "Salz und Pfeffer nach Geschmack"
+    ],
+    "anleitung": "1. Hähnchenbrustfilet in Streifen schneiden und mit Salz und Pfeffer würzen. \n2. Paprika, Zwiebel und Knoblauch in dünne Streifen schneiden. \n3. Brokkoli in kleine Röschen teilen. \n4. In einer Pfanne Sesamöl erhitzen und das marinierte Hähnchen anbraten, bis es gar ist. \n5. Zwiebel, Knoblauch, Paprika und Brokkoli hinzufügen und kurz mitbraten. \n6. Sojasauce, Honig und Ingwer hinzufügen und alles gut vermengen. \n7. Bei mittlerer Hitze etwa 5-7 Minuten köcheln lassen, bis das Gemüse bissfest ist. \n8. Mit Reis oder Nudeln servieren. Guten Appetit!"
+  },
+  {
+    "id": 6,
+    "name": "Schokoladenmousse",
+    "zutaten": [
+      "200g dunkle Schokolade",
+      "4 Eier",
+      "4 EL Zucker",
+      "200ml Sahne",
+      "1 TL Vanilleextrakt"
+    ],
+    "anleitung": "1. Schokolade grob hacken und über einem Wasserbad schmelzen. \n2. Eier trennen und das Eiweiß steif schlagen. \n3. In einer separaten Schüssel Eigelb und Zucker schaumig schlagen. \n4. Geschmolzene Schokolade unter die Eigelb-Zucker-Mischung rühren. \n5. Eiweiß vorsichtig unter die Schokoladenmischung heben. \n6. Sahne steif schlagen und ebenfalls unterheben. \n7. Die Mousse in Dessertgläser füllen und für mindestens 2 Stunden kalt stellen. \n8. Nach Belieben mit Sahne und Schokoraspeln garnieren und servieren."
+  },
+  {
+    "id": 7,
+    "name": "Tomato Basil Soup",
+    "zutaten": [
+      "500g Tomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "500ml Gemüsebrühe",
+      "1 TL Olivenöl",
+      "50ml Sahne",
+      "Frisches Basilikum",
+      "Salz und Pfeffer nach Geschmack"
+    ],
+    "anleitung": "1. Tomaten waschen und grob würfeln. Zwiebel und Knoblauch fein hacken. \n2. Olivenöl in einem Topf erhitzen und Zwiebel und Knoblauch darin glasig dünsten. \n3. Tomaten hinzufügen und kurz anbraten. \n4. Mit Gemüsebrühe ablöschen und zum Kochen bringen. \n5. Bei niedriger Hitze etwa 20 Minuten köcheln lassen, bis die Tomaten weich sind. \n6. Die Suppe pürieren, bis sie glatt ist. \n7. Sahne hinzufügen und gut vermischen. \n8. Mit Salz und Pfeffer abschmecken und mit frischem Basilikum garnieren. Servieren und genießen!"
+  },
+  {
+    "id": 8,
+    "name": "Banana Bread",
+    "zutaten": [
+      "3 reife Bananen",
+      "200g Mehl",
+      "100g Zucker",
+      "100g Butter",
+      "2 Eier",
+      "1 TL Backpulver",
+      "1 TL Vanilleextrakt",
+      "1/2 TL Zimt",
+      "Eine Prise Salz"
+    ],
+    "anleitung": "1. Bananen schälen und mit einer Gabel zerdrücken. \n2. In einer Schüssel Butter und Zucker cremig rühren. \n3. Eier hinzufügen und gut vermengen. \n4. Mehl, Backpulver, Vanilleextrakt, Zimt und Salz hinzufügen und zu einem Teig verrühren. \n5. Zerdrückte Bananen zum Teig geben und gut vermischen. \n6. Den Teig in eine gefettete Kastenform füllen. \n7. Im vorgeheizten Ofen bei 180 Grad Celsius etwa 45-50 Minuten backen. \n8. Aus dem Ofen nehmen und abkühlen lassen, bevor das Bananenbrot aus der Form genommen wird. Genießen!"
+  },
+  {
+    "id": 9,
+    "name": "Greek Salad",
+    "zutaten": [
+      "1 Gurke",
+      "2 Tomaten",
+      "1 grüne Paprika",
+      "1 rote Zwiebel",
+      "200g Feta-Käse",
+      "Olivenöl",
+      "Frischer Zitronensaft",
+      "Getrockneter Oregano",
+      "Salz und Pfeffer nach Geschmack"
+    ],
+    "anleitung": "1. Gurke, Tomaten, Paprika und Zwiebel in Scheiben oder Würfel schneiden. \n2. Feta-Käse zerbröckeln und zum Gemüse geben. \n3. Mit Olivenöl und Zitronensaft beträufeln. \n4. Mit Salz, Pfeffer und getrocknetem Oregano würzen. \n5. Gut vermengen und vor dem Servieren etwa 15 Minuten ziehen lassen. \n6. Genießen!"
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Brownies",
+    "zutaten": [
+      "200g dunkle Schokolade",
+      "150g Butter",
+      "200g Zucker",
+      "3 Eier",
+      "150g Mehl",
+      "1 TL Backpulver",
+      "1 TL Vanilleextrakt",
+      "Eine Prise Salz",
+      "100g gehackte Walnüsse (optional)"
+    ],
+    "anleitung": "1. Schokolade und Butter in einem Topf schmelzen und gut vermischen. \n2. Zucker, Eier, Vanilleextrakt und Salz hinzufügen und glatt rühren. \n3. Mehl und Backpulver sieben und unterrühren, bis ein glatter Teig entsteht. \n4. Optional gehackte Walnüsse hinzufügen und unterheben. \n5. Den Teig in eine gefettete Backform geben und glattstreichen. \n6. Im vorgeheizten Ofen bei 180 Grad Celsius etwa 25-30 Minuten backen. \n7. Aus dem Ofen nehmen und abkühlen lassen, bevor die Brownies in Stücke geschnitten werden. Genießen!"
+  }
+]
