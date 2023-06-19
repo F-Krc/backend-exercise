@@ -27,7 +27,7 @@ export const getAlbens = (req, res) => {
 export const getAlben = (req, res) => {
   const year = parseInt(req.params.year);
 
-  const alben = albens.find((a) => a.year === year);
+  const alben = albens.filter((a) => a.year === year);
 
   if (alben) {
     res.json(alben);
@@ -38,8 +38,8 @@ export const getAlben = (req, res) => {
 
 export const addAlben = async (req, res) => {
   const alben = req.body;
-  alben.id = albens.length + 1;
-  const newAlben = {id: alben.id, ...alben}
+  const newAlbenId = albens.reduce((maxId, alben) => Math.max(maxId, alben.id), 0) + 1;
+  const newAlben = { id: newAlbenId, ...alben };
   albens.push(newAlben);
   await db.write();
   res.send('Alben erfolgreich hinzugefügt');
