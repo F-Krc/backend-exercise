@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
   justify-content: center;
   background-color: lightgray;
@@ -8,7 +8,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
+  background-color: #f1f1f1;
   min-width: 800px;
   min-height: 100vh;
   text-align: center;
@@ -16,7 +16,7 @@ body{
 }
 
 .navbar {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   width: 400px;
   padding: 10px;
 }
@@ -41,24 +41,31 @@ body{
 }
 
 .nav-link:hover {
-  color: rgb(94, 94, 236);
+  color: #5e5eec;
+  border-bottom: 4px solid #5e5eec;
 }
 
 .title {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .search-bar {
   margin: 20px 0;
 }
 
-.search-bar input[type="text"] {
+.search-bar input[type='text'] {
   width: 480px;
   padding: 10px;
   margin-right: 20px;
   font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #5e5eec;
+  color: #fff;
 }
 
 .recipe-list {
@@ -83,8 +90,17 @@ body{
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
+.recipe button{
+  margin-right: 10px;
+}
+
+.recipe button:hover {
+  background-color: #5e5eec;
+  color: #fff;
+}
 .recipe-details {
   margin-top: 10px;
 }
@@ -103,6 +119,7 @@ body{
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .recipe-form form {
@@ -113,20 +130,21 @@ body{
 
 .recipe-form label {
   font-weight: bold;
+  color: #333;
 }
 
-.recipe-form input[type="text"],
+.recipe-form input[type='text'],
 .recipe-form textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
 }
 
-.recipe-form textarea{
+.recipe-form textarea {
   height: 120px;
 }
 
-.recipe-form button[type="submit"] {
+.recipe-form button[type='submit'] {
   padding: 10px 20px;
   background-color: #4caf50;
   color: #fff;
@@ -135,10 +153,11 @@ body{
   font-size: 16px;
 }
 
-.recipe-form button[type="submit"]:hover {
+.recipe-form button[type='submit']:hover {
   background-color: #45a049;
 }
 
-.message, .error-message{
+.message,
+.error-message {
   color: red;
 }
