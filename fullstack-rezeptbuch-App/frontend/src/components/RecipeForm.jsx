@@ -7,6 +7,7 @@ const RecipeForm = () => {
   const { createRecipe, updateRecipe, selectedRecipe } = useContext(AppContext);
   const [recipeData, setRecipeData] = useState(initialForm);
   const [showMessage, setShowMessage] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     if (selectedRecipe) {
@@ -23,12 +24,23 @@ const RecipeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (Object.values(recipeData).some((value) => value.trim() === '')) {
+      setHasError(true);
+      setTimeout(() => {
+        setHasError(false);
+      }, 3000);
+      return; 
+    }
+
     if (selectedRecipe) {
       updateRecipe(recipeData);
     } else {
       createRecipe(recipeData);
     }
+
     setRecipeData(initialForm);
+    setHasError(false);
     setShowMessage(true);
     setTimeout(() => {
       setShowMessage(false);
@@ -38,6 +50,7 @@ const RecipeForm = () => {
   return (
     <div className="recipe-form">
       <h2>Rezept {selectedRecipe ? 'bearbeiten' : 'erstellen'}</h2>
+      {hasError && <p className="error-message">Bitte füllen Sie alle Felder aus.</p>}
       {showMessage && <p className="message">Rezept hinzugefügt.</p>}
       <form onSubmit={handleSubmit}>
         <label>Name:</label>

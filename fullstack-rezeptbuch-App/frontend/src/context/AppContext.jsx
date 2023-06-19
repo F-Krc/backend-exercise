@@ -6,13 +6,15 @@ export const AppContext = createContext();
 const AppProvider = ({ children }) => {
   const [recipes, setRecipes] = useState([]);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const [filteredRecipes, setFilteredRecipes] = useState([]);
 
   const backendUrl = 'http://localhost:3000';
 
   // Rezepte abrufen
   useEffect(() => {
     fetchRecipes();
-  }, []);
+  }, [recipes]);
+
 
   // Rezepte abrufen
   const fetchRecipes = async () => {
@@ -67,9 +69,12 @@ const AppProvider = ({ children }) => {
     try {
       if (searchTerm.trim() === '') {
         fetchRecipes();
+        setFilteredRecipes([]);
       } else {
         const response = await axios.get(`${backendUrl}/recipes/${searchTerm}`);
-        setRecipes(response.data);
+        //console.log(response.data);
+        setFilteredRecipes(response.data);
+        //console.log(filteredRecipes);
       }
     } catch (error) {
       console.log(error);
@@ -77,12 +82,14 @@ const AppProvider = ({ children }) => {
   };
 
   const handleRezeptlistClick = () => {
+    setFilteredRecipes([]);
     fetchRecipes();
   };
 
   return (
     <AppContext.Provider
       value={{
+        filteredRecipes,
         recipes,
         selectedRecipe,
         setSelectedRecipe,
@@ -91,7 +98,7 @@ const AppProvider = ({ children }) => {
         deleteRecipe,
         updateRecipe,
         searchRecipes,
-        handleRezeptlistClick
+        handleRezeptlistClick,
       }}
     >
       {children}
@@ -100,3 +107,4 @@ const AppProvider = ({ children }) => {
 };
 
 export default AppProvider;
+

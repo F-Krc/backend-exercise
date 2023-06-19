@@ -22,8 +22,11 @@ export const getRecipe = (req, res) => {
 
 export const addRecipe = async (req, res) => {
   const recipe = req.body;
+
+  const zutatenArray = recipe.zutaten.split(',').map((item) => item.trim());
+
   const newRecipeId = recipes.reduce((maxId, recipe) => Math.max(maxId, recipe.id), 0) + 1;
-  const newRecipe = { id: newRecipeId, ...recipe };
+  const newRecipe = { id: newRecipeId, ...recipe, zutaten: zutatenArray };
   recipes.push(newRecipe);
   await db.write();
   res.send('Recipe erfolgreich hinzugefügt');
