@@ -25,7 +25,7 @@ const RecipeForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (Object.values(recipeData).some((value) => value.trim() === '')) {
+    if (Object.values(recipeData).some((value) => value === '')) {
       setHasError(true);
       setTimeout(() => {
         setHasError(false);
