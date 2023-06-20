@@ -6,12 +6,10 @@ import axios from 'axios';
 const Recipe = ({ recipe }) => {
   const { deleteRecipe, setSelectedRecipe, backendUrl } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
-  const [showButton, setShowButton] = useState(false);
   const navigate = useNavigate();
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
-    setShowButton(true);
   };
 
   const handleDelete = async () => {
@@ -38,7 +36,7 @@ const Recipe = ({ recipe }) => {
         </div>
       )}
       <button onClick={toggleDetails}>{showDetails ? 'Details verbergen' : 'Details anzeigen'}</button>
-      {showButton && <button onClick={handleEdit}>Bearbeiten</button>}
+      {showDetails && <button onClick={handleEdit}>Bearbeiten</button>}
       <button onClick={handleDelete}>Löschen</button>
     </div>
   );
