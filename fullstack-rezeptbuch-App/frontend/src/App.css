@@ -1,3 +1,5 @@
+/* Styles for screen widths above 600px */
+
 body {
   display: flex;
   justify-content: center;
@@ -73,7 +75,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin-bottom: 20px;
 }
 
@@ -93,7 +96,7 @@ body {
   color: #333;
 }
 
-.recipe button{
+.recipe button {
   margin-right: 10px;
 }
 
@@ -101,6 +104,7 @@ body {
   background-color: #5e5eec;
   color: #fff;
 }
+
 .recipe-details {
   margin-top: 10px;
 }
@@ -160,4 +164,107 @@ body {
 .message,
 .error-message {
   color: red;
+}
+
+/* Media query for screen width 420px */
+
+@media only screen and (max-width: 420px) {
+  .container {
+    min-width: auto;
+    padding: 10px;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input[type='text'] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .recipe-list {
+    width: 100%;
+    max-width: 100%;
+    /* padding: 0 10px; Added padding to create space between cards */
+  }
+
+  .recipe {
+    padding: 10px; /* Reduced padding for smaller cards */
+  }
+
+  .recipe-form input[type='text'],
+  .recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Media query for screen width 600px */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    min-width: auto;
+    padding: 10px;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar input[type='text'] {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .recipe-list {
+    width: 100%;
+    max-width: 100%;
+    /* padding: 0 5px; Added padding to create space between cards */
+  }
+
+  .recipe {
+    padding: 10px;
+    margin: 20px; /* Reduced padding for smaller cards */
+  }
+
+  .recipe-form input[type='text'],
+  .recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
 }
