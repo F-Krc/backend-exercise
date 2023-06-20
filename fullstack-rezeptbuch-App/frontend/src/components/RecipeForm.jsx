@@ -40,7 +40,6 @@ const RecipeForm = () => {
     }
 
     setRecipeData(initialForm);
-    setHasError(false);
     setShowMessage(true);
     setTimeout(() => {
       setShowMessage(false);
