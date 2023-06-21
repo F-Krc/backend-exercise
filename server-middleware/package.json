@@ -1,0 +1,27 @@
+{
+  "name": "be-server-middleware-f-krc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/be-server-middleware-F-Krc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/be-server-middleware-F-Krc/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/be-server-middleware-F-Krc#readme",
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "lowdb": "^6.0.1"
+  }
+}

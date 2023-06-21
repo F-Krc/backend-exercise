@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Steve",
+    "lastName": "Stevenson",
+    "age": 120,
+    "fbw": 36,
+    "profession": "Musician",
+    "favoriteBands": [
+      "Kings of Leon",
+      "Nirvana",
+      "Radiohead",
+      "Tash Sultana"
+    ],
+    "email": "steve@metallica.com"
+  }
+]
