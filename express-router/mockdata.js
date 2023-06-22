@@ -1,13 +1,13 @@
-export let mockdataTodo = [
+let mockdataTodo = [
     { text: "Einkaufen gehen", done: false, id: 1, farbe: 'schwarz' },
     { text: "Eis essen", done: false, id: 2, farbe: 'schwarz' },
     { text: "Spielen", done: false, id: 3, farbe: 'schwarz' },
     { text: "Schlafen", done: false, id: 4, farbe: 'schwarz' },
     { text: "Programmieren", done: true, id: 5, farbe: 'schwarz' },
-    { text: "Aufstehen", done: false, id: 6 },
+    { text: "Aufstehen", done: false, id: 6, farbe: 'schwarz' },
 ]
 
-export let mockdataUser = [
+ let mockdataUser = [
     {
         firstname: 'Anna',
         lastname: "Anka",
@@ -24,4 +24,4 @@ export let mockdataUser = [
     }
 
 ]
-// module.exports = { mockdataTodo: mockdataTodo, mockdataUser: mockdataUser }
+export { mockdataTodo, mockdataUser }

@@ -1,14 +1,5 @@
 import errorCreator from 'http-errors';
-//import { mockdataTodo } from '../mockdata.js';
-
-let mockdataTodo = [
-  { text: 'Einkaufen gehen', done: false, id: 1, farbe: 'schwarz' },
-  { text: 'Eis essen', done: false, id: 2, farbe: 'schwarz' },
-  { text: 'Spielen', done: false, id: 3, farbe: 'schwarz' },
-  { text: 'Schlafen', done: false, id: 4, farbe: 'schwarz' },
-  { text: 'Programmieren', done: true, id: 5, farbe: 'schwarz' },
-  { text: 'Aufstehen', done: false, id: 6 },
-];
+import { mockdataTodo }  from '../mockdata.js';
 
 export const getTodos = (req, res) => {
   res.json(mockdataTodo);
