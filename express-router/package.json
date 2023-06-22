@@ -1,0 +1,29 @@
+{
+  "name": "be-express-router",
+  "version": "1.0.0",
+  "description": "## Aufgabe",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/be-express-router.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/be-express-router/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/be-express-router#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0"
+  }
+}
