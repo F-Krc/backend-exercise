@@ -1,0 +1,26 @@
+{
+  "name": "telegram-bot-workshop-f-krc",
+  "version": "1.0.0",
+  "description": "Heute bauen wir Telegram Bots. Dazu musst du Telegram auf deinem Handy installiert haben. (Alternativ kannst du sowas ähnliches auch mit Whatsapp machen, da musst du aber selber recherchieren wie das geht)",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/telegram-bot-workshop-F-Krc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/telegram-bot-workshop-F-Krc/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/telegram-bot-workshop-F-Krc#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
