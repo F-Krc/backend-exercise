@@ -12,11 +12,12 @@ export const getOrders = async (req, res) => {
 export const getOrder = async (req, res) => {
   const id = req.params.id;
 
-  const order = await OrderModel.find({_id: id});
+  const order = await OrderModel.find({ _id: id });
 
   if (order.length > 0) {
-    
-    res.json(order);
+    res.send(order);
+    // console.log(order[0].foodItems);
+    console.log('total price get: ', order[0].totalPrice);
   } else {
     res.status(404).send('Es gibt keinen Order mit diesem Namen');
   }
@@ -27,7 +28,7 @@ export const addOrder = async (req, res) => {
 
   try {
     const newOrder = await OrderModel.create(order);
-    console.log("total preis: ", newOrder.totalPrice);
+    console.log('total preis post: ', newOrder.totalPrice);
     res.status(200).send(`Order erfolgreich hinzugefügt ${newOrder}`);
   } catch (error) {
     res.send(`Fehler beim Hinzufügen des Orders: ${error.message}`);
