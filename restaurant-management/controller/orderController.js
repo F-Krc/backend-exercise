@@ -12,12 +12,12 @@ export const getOrders = async (req, res) => {
 export const getOrder = async (req, res) => {
   const id = req.params.id;
 
-  const order = await OrderModel.find({ _id: id });
+  const order = await OrderModel.findById({ _id: id });
 
   if (order.length > 0) {
     res.send(order);
     // console.log(order[0].foodItems);
-    console.log('total price get: ', order[0].totalPrice);
+    console.log('total price get: ', order.totalPrice);
   } else {
     res.status(404).send('Es gibt keinen Order mit diesem Namen');
   }
