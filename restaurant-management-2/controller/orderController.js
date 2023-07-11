@@ -24,6 +24,7 @@ export const getOrder = async (req, res) => {
 export const addOrder = async (req, res) => {
   const order = req.body;
   const tableId = req.params.id;
+  order.table = tableId;
 
   try {
     const table = await TableModel.findById(tableId);
