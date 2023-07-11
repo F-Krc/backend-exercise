@@ -1,5 +1,5 @@
 import OrderModel from '../models/Order.js';
-import TableModel from "../models/Table.js";
+import TableModel from '../models/Table.js';
 
 export const getOrders = async (req, res) => {
   try {
@@ -45,7 +45,6 @@ export const addOrder = async (req, res) => {
   }
 };
 
-
 export const updateOrder = async (req, res) => {
   const id = req.params.id;
   const updatedOrder = req.body;
@@ -67,14 +66,25 @@ export const deleteOrder = async (req, res) => {
   const id = req.params.id;
 
   try {
+    const deletedOrder = await OrderModel.findById(id);
+    const tableId = deletedOrder.table;
+
     const order = await OrderModel.findByIdAndDelete(id);
 
+    const table = await TableModel.findById(tableId);
+    const orders = table.orders;
+
+    const updatedOrders = orders.filter((order) => order.toString() !== id);
+
+    table.orders = updatedOrders;
+    await table.save();
+
     if (!order) {
-      return res.status(404).send('Order nicht gefunden');
+      return res.status(404).send('Order hat nicht gefunden');
     }
 
-    res.send('Order erfolgreich gelöscht');
+    res.send('Order hat erfolgreich gelöscht');
   } catch (error) {
-    res.send(`Fehler beim Löschen des Order: ${error.message}`);
+    res.send(`Order hat nicht deleted: ${error.message}`);
   }
 };
