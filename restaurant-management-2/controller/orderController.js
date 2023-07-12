@@ -12,7 +12,7 @@ export const getOrders = async (req, res) => {
 
 export const getOrder = async (req, res) => {
   const id = req.params.id;
-  const order = await OrderModel.findById(id);
+  const order = await OrderModel.findById(id).populate('table');
   if (order) {
     res.send(order);
     console.log('total price get: ', order.totalPrice);

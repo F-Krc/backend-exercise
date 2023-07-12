@@ -11,9 +11,11 @@ export const getTables = async (req, res) => {
 
 export const getTable = async (req, res) => {
   const id = req.params.id;
-  const table = await TableModel.findById(id).populate('orders');;
+  const table = await TableModel.findById(id);
+  const tablePopulate = await TableModel.findById(id).populate('orders');
   if (table) {
-    res.send(table);
+    //res.send(table);
+    res.send(tablePopulate);
   } else {
     res.status(404).send('Es gibt keinen Table mit dieser ID');
   }
