@@ -52,6 +52,7 @@ export const deleteRoom = async (req, res) => {
   const id = req.params.id;
 
   try {
+    const reservation = await ReservationModel.deleteOne({room: id});
     const room = await RoomModel.findByIdAndDelete(id);
 
     if (!room) {
