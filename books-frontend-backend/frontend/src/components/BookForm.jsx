@@ -38,23 +38,25 @@ function BookForm() {
   };
 
   return (
-    <div>
+    <div className="add-book-form">
       <h2>Add Book</h2>
       <form onSubmit={handleSubmit}>
-        <label>Title</label>
+        <label>Title:</label>
         <input type="text" name="title" value={formData.title} onChange={handleChange} />
         <br />
-        <label>Author</label>
+        <label>Author:</label>
         <input type="text" name="author" value={formData.author} onChange={handleChange} />
         <br />
         <label>ISBN:</label>
         <input type="text" name="ISBN" value={formData.ISBN} onChange={handleChange} />
         <br />
-        <label> Is Good Book?</label>
+        <label>Is Good Book?</label>
         <input type="checkbox" checked={formData.isGoodBook} onChange={handleChange} />
         <button type="submit">{selectedBook ? 'Aktualisieren' : 'Erstellen'}</button>
       </form>
-      <button><Link to={'/'}>Book Liste</Link></button>
+      <button className="book-list-button">
+        <Link to={'/'}>Book Liste</Link>
+      </button>
     </div>
   );
 }

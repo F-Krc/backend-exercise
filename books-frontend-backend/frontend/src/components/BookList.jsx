@@ -8,13 +8,15 @@ function BookList() {
 
   return (
     <>
-      <h2>Book Liste</h2>
-      <ul>
+      <h2 className="book-list-title">Book Liste</h2>
+      <ul className="book-list">
         {books.map((book, index) => (
           <Book key={index} book={book} />
         ))}
       </ul>
-      <button><Link to={'/new'}>Add Book</Link></button>
+      <button className="add-book-button">
+        <Link to={'/new'}>Add Book</Link>
+      </button>
     </>
   );
 }

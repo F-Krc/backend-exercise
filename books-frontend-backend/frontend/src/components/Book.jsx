@@ -16,13 +16,15 @@ function Book({ book }) {
   };
 
   return (
-    <div>
-      <li key={book._id}>
-        {`${book.title} by ${book.author}`}
-        <button onClick={handleEdit}>Edit</button>
-        <button onClick={handleDelete}>Delete</button>
-      </li>
-    </div>
+    <li key={book._id} className="book-item">
+      {`${book.title} by ${book.author}`}
+      <button className="edit-button" onClick={handleEdit}>
+        Edit
+      </button>
+      <button className="delete-button" onClick={handleDelete}>
+        Delete
+      </button>
+    </li>
   );
 }
 
