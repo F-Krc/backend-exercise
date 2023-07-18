@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+import { useNavigate } from 'react-router-dom';
 
 function Book({ book }) {
   const { deleteBook, setSelectedBook } = useContext(AppContext);
+  const navigate = useNavigate();
 
   const handleDelete = () => {
     deleteBook(book._id);
@@ -10,6 +12,7 @@ function Book({ book }) {
 
   const handleEdit = () => {
    setSelectedBook(book);
+    navigate('/new');
   };
 
   return (

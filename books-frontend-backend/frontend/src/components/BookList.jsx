@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import Book from './Book';
+import { Link } from 'react-router-dom';
 
 function BookList() {
   const { books } = useContext(AppContext);
@@ -13,6 +14,7 @@ function BookList() {
           <Book key={index} book={book} />
         ))}
       </ul>
+      <button><Link to={'/new'}>Add Book</Link></button>
     </>
   );
 }
