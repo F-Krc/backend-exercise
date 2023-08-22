@@ -44,11 +44,9 @@ export const updateBook = async (req, res) => {
 export const deleteBook = async(req, res) => {
    const bookId = req.params.id;
    try {
-      // new: true sagt das const updatedBook sich auf das neue Buch bezieht
       const deletedBook = await BookModel.findByIdAndDelete(bookId);
       res.send(`book deleted!`)
    } catch (error) {
       res.send("book could not be deleted. " + error.message);
    }
-
 }
